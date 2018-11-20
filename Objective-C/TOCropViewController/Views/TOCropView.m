@@ -800,6 +800,8 @@ typedef NS_ENUM(NSInteger, TOCropViewOverlayEdge) {
 #pragma mark - Gesture Recognizer -
 - (void)gridPanGestureRecognized:(UIPanGestureRecognizer *)recognizer
 {
+    //Note: No
+    /*
     CGPoint point = [recognizer locationInView:self];
     
     if (recognizer.state == UIGestureRecognizerStateBegan) {
@@ -814,6 +816,7 @@ typedef NS_ENUM(NSInteger, TOCropViewOverlayEdge) {
     }
     
     [self updateCropBoxFrameWithGesturePoint:point];
+     */
 }
 
 - (void)longPressGestureRecognized:(UILongPressGestureRecognizer *)recognizer

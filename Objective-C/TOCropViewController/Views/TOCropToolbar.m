@@ -135,6 +135,12 @@
     [_resetButton setImage:[TOCropToolbar resetImage] forState:UIControlStateNormal];
     [_resetButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_resetButton];
+    
+    //Note: we don't required to this below button, so hide.
+    _clampButton.hidden = YES;
+    _rotateCounterclockwiseButton.hidden = YES;
+    _rotateClockwiseButton.hidden = YES;
+    _resetButton.hidden = YES;
 }
 
 - (void)layoutSubviews
